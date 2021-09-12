@@ -1,0 +1,55 @@
+  .shake {
+    animation: shake 0.8s infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  #home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #playground {
+    display: flex;
+  }
+
+  #scoreBoard {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box {
+    border: 1px black;
+    background: #eee;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    cursor: pointer;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-8px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+      transform: translateX(8px);
+    }
+  }
+
+  #playGame {
+    width: 100px;
+    margin: 10px auto;
+  }
